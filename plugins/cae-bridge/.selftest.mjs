@@ -31,7 +31,7 @@ const defineTool = rawDefineTool
 export const name = 'cae-bridge'
 export const inject = ['tools']
 
-const ROOT = 'D:\\DSH\\DSH\\cae'
+const ROOT = '%DSH_WORKSPACE%\\cae'
 const TMP = join(ROOT, 'tmp')
 const LOGDIR = join(ROOT, 'jobs')
 

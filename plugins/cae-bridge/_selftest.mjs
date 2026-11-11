@@ -3,12 +3,12 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 
-const src = readFileSync('D:\\DSH\\cae-bridge\\index.js', 'utf8')
+const src = readFileSync('%DSH_ROOT%\\cae-bridge\\index.js', 'utf8')
 const patched = src.replace(
   "import { defineTool } from '@deepseek-ai/dsh-tools'",
   'const defineTool = (o) => o',
 )
-const tmp = 'D:\\DSH\\cae-bridge\\.selftest.mjs'
+const tmp = '%DSH_ROOT%\\cae-bridge\\.selftest.mjs'
 writeFileSync(tmp, patched, 'utf8')
 
 const mod = await import(pathToFileURL(tmp).href + '?t=' + Date.now())
