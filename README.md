@@ -27,6 +27,6 @@ DSH **核心 / 基础设施插件包**：CAE 桥、HTTP 网关保活补丁、桌
 ## 恢复方式
 
 把对应目录拷回本机后重启 DSH：
-- 插件 → `D:\DSH\<插件名>`（`crosspet` 例外：`%LOCALAPPDATA%\CrossPet\dsh-plugin-crosspet`）
+- 插件 → `%DSH_ROOT%\<插件名>`（`crosspet` 例外：`%LOCALAPPDATA%\CrossPet\dsh-plugin-crosspet`）
 - 技能 → `%USERPROFILE%\.dsh\skills\<技能名>`
 - 若插件在 profile 里以 `link:` 挂载，恢复后确认 `%USERPROFILE%\.dsh\profiles\desktop` 的链接仍指向上述路径。

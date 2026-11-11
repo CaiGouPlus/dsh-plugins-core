@@ -249,7 +249,7 @@
 
   // ── 契约渲染（机器块专用标记）────────────────────────────
   //
-  // 依据 D:\DSH\dnd-plugin\contract\machine-blocks-pack.json：
+  // 依据 %DSH_ROOT%\dnd-plugin\contract\machine-blocks-pack.json：
   // 「状态更新 / 状态更正 / 商店 / 升级 / 车卡」这五个标记在桌面端由皮肤专用
   // 解析器渲染（Fate 面板、商品清单、升级卡），不是通用键值卡。手机端没有皮肤，
   // 这里按契约字段做轻量版：只渲染本条消息里的块，不做跨轮累积、不做 8 面板。
